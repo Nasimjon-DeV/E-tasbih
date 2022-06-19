@@ -1,0 +1,133 @@
+/* .loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+   */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.tasbeh{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    height: 300px;
+    background-color: rgb(45, 45, 45);
+    border: 10px solid green;
+    border-radius: 32px;
+    position: relative;
+    padding: 25px 30px;
+}
+.tasbeh input{
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    background: #6b6764;
+    border: 3px solid #6BA57C;
+    outline: none;
+    text-align: right;
+    filter: contrast(3);
+    color: red;
+}
+
+input.active{
+    filter:  brightness(1);
+    background-color: #FFF;
+    color: black;
+}
+
+label{
+    font-size: 25px;
+    color: #FFF;
+}
+
+.tasbeh #tugma{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #2d6133;
+    box-shadow:0 -2px  4px #A6A6A6;
+    color: #FFF;
+    font-size: 12px;
+    position: absolute;
+    top: 180px;
+}
+
+.tasbeh #reset{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #72cc7e;
+    background-color: #2d6133;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+}
+
+.tasbeh #led{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #72cc7e;
+    background-color: #2d6133;
+    position: absolute;
+    top: 130px;
+    right: 20px;
+}
+button p{
+    position: relative;
+    color: #fff;
+    top: -30px;
+}
